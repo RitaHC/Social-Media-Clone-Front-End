@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 const linkStyle = {
     color: 'white',
-    textDecoration: 'none'
+    textDecoration: 'none',
 }
 const authenticatedOptions = (
 	<>
@@ -43,10 +43,10 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-	<Navbar bg='primary' variant='dark' expand='md'>
-		<Navbar.Brand>
+	<Navbar bg='dark' class="navbar" expand='md'>
+		<Navbar.Brand class="navbar text-dark">
             <Link to='/' style={linkStyle}>
-                react-auth-template
+                SocialLens
             </Link>
         </Navbar.Brand>
 		<Navbar.Toggle aria-controls='basic-navbar-nav' />
